@@ -39,8 +39,8 @@ window.onload = function () {
 
     // Get elements
     var showLives = document.getElementById("my-lives");
-    console.log(show-lives); //show element
-    var showCatagory = document.getElementById("scatagory");
+    console.log(showLives); //show element
+    var showCatagory = document.getElementById("catagory-name");
 
     // create alphabet ul
     var buttons = function () {
@@ -222,7 +222,7 @@ window.onload = function () {
         buttons();
 
         geusses = [];
-        lives = 10;
+        lives = 7;
         counter = 0;
         space = 0;
         result();
@@ -235,7 +235,7 @@ window.onload = function () {
 
     // Reset
 
-    document.getElementById("reset").onclick = function () {
+    document.getElementById('reset').onclick = function () {
         correct.parentNode.removeChild(correct);
         letters.parentNode.removeChild(letters);
         context.clearRect(0, 0, 400, 400);
